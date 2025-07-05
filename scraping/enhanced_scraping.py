@@ -152,13 +152,25 @@ product_urls = [
         "product_name": "MSH Niacinamide Brightening Moisture Gel",
         "url": "https://reviews.femaledaily.com/products/moisturizer/gel/skintific/msh-niacinamide-brightening-moisture-gel?cat=&cat_id=0&age_range=&skin_type=&skin_tone=&skin_undertone=&hair_texture=&hair_type=&order=newest&page=1"
     },
+    {
+        "product_name": "Truffle Biome Cream Gel Moisturizer - hydrating the skin",
+        "url": "https://reviews.femaledaily.com/products/moisturizer/gel/skintific/truffle-biome-skin-reborn-cream-gel-moisturizer"
+    },
+    {
+        "product_name": "Panthenol Acne Calming Water Gel - treating acne-prone skin",
+        "url": "https://reviews.femaledaily.com/products/moisturizer/gel/skintific/5-panthenol-acne-calming-water-gel"
+    },
+    {
+        "product_name": "SymWhite 377 Moisture Gel - fading dark spots",
+        "url": "https://reviews.femaledaily.com/products/moisturizer/gel/skintific/symwhite-377-dark-spot-moisture-gel"
+    }
 ]
 
 
 # Scrape all reviews with pagination
 # Set max_pages=None for all pages, or a number to limit pages
 max_pages = 50  # Limit to first 50 pages for this example"
-all_reviews = scrape_all_reviews(product_urls[0]["url"], headers, max_pages=None, delay=1)
+all_reviews = scrape_all_reviews(product_urls[4]["url"], headers, max_pages=None, delay=1)
 
 # Generate timestamp for filenames
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -168,9 +180,7 @@ print(f"Total reviews collected: {len(all_reviews)}")
 
 if all_reviews:
     # Save in multiple formats
-    save_reviews_to_json(all_reviews, f"reviews_{product_urls[0]["product_name"]}_{timestamp}.json")
-    save_reviews_to_csv(all_reviews, f"reviews_{product_urls[0]["product_name"]}_{timestamp}.csv")
-    save_reviews_to_txt(all_reviews, f"reviews_{product_urls[0]["product_name"]}_{timestamp}.txt")
+    save_reviews_to_csv(all_reviews, f"reviews_{product_urls[4]["product_name"]}_{timestamp}.csv")
 
     print(f"\n=== SAMPLE REVIEWS ===")
     for i, review in enumerate(all_reviews[:5], 1):  # Show first 5 reviews

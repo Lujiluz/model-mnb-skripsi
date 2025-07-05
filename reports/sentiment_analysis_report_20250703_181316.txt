@@ -1,0 +1,75 @@
+============================================================
+SENTIMENT ANALYSIS REPORT - Skintific 5X Ceramide Barrier Repair Moisture Gel
+============================================================
+Generated on: 2025-07-03 18:13:16
+
+DATASET STATISTICS:
+- Total reviews: 1527
+- Unique products: 1
+- Sentiment distribution:
+  positive: 1004 (65.7%)
+  neutral: 374 (24.5%)
+  negative: 149 (9.8%)
+
+MODEL CONFIGURATION:
+- Algorithm: MultinomialNB
+- Vectorizer: TFIDF
+- Max features: 3000
+- N-gram range: (1, 2)
+
+MODEL PERFORMANCE:
+- Training accuracy: 0.8801
+- Test accuracy: 0.6310
+- Cross-validation mean: 0.6592 (+/- 0.0035)
+
+CLASSIFICATION METRICS DEFINITIONS:
+- Precision: Of all instances predicted as positive for a class, how many were actually positive?
+  Formula: True Positives / (True Positives + False Positives)
+  Higher precision means fewer false positive errors.
+
+- Recall (Sensitivity): Of all actual positive instances for a class, how many were correctly identified?
+  Formula: True Positives / (True Positives + False Negatives)
+  Higher recall means fewer false negative errors.
+
+- F1-Score: Harmonic mean of precision and recall, balancing both metrics.
+  Formula: 2 * (Precision * Recall) / (Precision + Recall)
+  F1-score is useful when you need a balance between precision and recall.
+
+- Support: The number of actual occurrences of each class in the test dataset.
+  This shows how many samples of each class were used for evaluation.
+
+DETAILED CLASSIFICATION METRICS:
+NEGATIVE:
+  Precision: 0.2632 (26.32%)
+  Recall: 0.5556 (55.56%)
+  F1-score: 0.3571 (35.71%)
+  Support: 45.0 samples
+
+NEUTRAL:
+  Precision: 0.4545 (45.45%)
+  Recall: 0.1339 (13.39%)
+  F1-score: 0.2069 (20.69%)
+  Support: 112.0 samples
+
+POSITIVE:
+  Precision: 0.7545 (75.45%)
+  Recall: 0.8272 (82.72%)
+  F1-score: 0.7892 (78.92%)
+  Support: 301.0 samples
+
+MACRO AVERAGE (unweighted mean across all classes):
+  Precision: 0.4907 (49.07%)
+  Recall: 0.5056 (50.56%)
+  F1-score: 0.4511 (45.11%)
+
+WEIGHTED AVERAGE (weighted by support for each class):
+  Precision: 0.6329 (63.29%)
+  Recall: 0.6310 (63.10%)
+  F1-score: 0.6044 (60.44%)
+
+RECOMMENDATIONS:
+- Model performance is acceptable (60-70% accuracy)
+- Consider collecting more training data
+- Try different preprocessing techniques
+
+============================================================

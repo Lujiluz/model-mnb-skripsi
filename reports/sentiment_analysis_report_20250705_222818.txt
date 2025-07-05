@@ -1,0 +1,75 @@
+============================================================
+SENTIMENT ANALYSIS REPORT
+============================================================
+Generated on: 2025-07-05 22:28:18
+
+DATASET STATISTICS:
+- Total reviews: 3127
+- Unique products: 5
+- Sentiment distribution:
+  positive: 1968 (62.9%)
+  neutral: 907 (29.0%)
+  negative: 252 (8.1%)
+
+MODEL CONFIGURATION:
+- Algorithm: MultinomialNB
+- Vectorizer: TFIDF
+- Max features: 3000
+- N-gram range: (1, 2)
+
+MODEL PERFORMANCE:
+- Training accuracy: 0.6801
+- Test accuracy: 0.6322
+- Cross-validation mean: 0.7635 (+/- 0.2554)
+
+CLASSIFICATION METRICS DEFINITIONS:
+- Precision: Of all instances predicted as positive for a class, how many were actually positive?
+  Formula: True Positives / (True Positives + False Positives)
+  Higher precision means fewer false positive errors.
+
+- Recall (Sensitivity): Of all actual positive instances for a class, how many were correctly identified?
+  Formula: True Positives / (True Positives + False Negatives)
+  Higher recall means fewer false negative errors.
+
+- F1-Score: Harmonic mean of precision and recall, balancing both metrics.
+  Formula: 2 * (Precision * Recall) / (Precision + Recall)
+  F1-score is useful when you need a balance between precision and recall.
+
+- Support: The number of actual occurrences of each class in the test dataset.
+  This shows how many samples of each class were used for evaluation.
+
+DETAILED CLASSIFICATION METRICS:
+NEGATIVE:
+  Precision: 0.2022 (20.22%)
+  Recall: 0.9474 (94.74%)
+  F1-score: 0.3333 (33.33%)
+  Support: 76.0 samples
+
+NEUTRAL:
+  Precision: 0.8981 (89.81%)
+  Recall: 0.5184 (51.84%)
+  F1-score: 0.6573 (65.73%)
+  Support: 272.0 samples
+
+POSITIVE:
+  Precision: 0.8941 (89.41%)
+  Recall: 0.6441 (64.41%)
+  F1-score: 0.7488 (74.88%)
+  Support: 590.0 samples
+
+MACRO AVERAGE (unweighted mean across all classes):
+  Precision: 0.6648 (66.48%)
+  Recall: 0.7033 (70.33%)
+  F1-score: 0.5798 (57.98%)
+
+WEIGHTED AVERAGE (weighted by support for each class):
+  Precision: 0.8392 (83.92%)
+  Recall: 0.6322 (63.22%)
+  F1-score: 0.6886 (68.86%)
+
+RECOMMENDATIONS:
+- Model performance is acceptable (60-70% accuracy)
+- Consider collecting more training data
+- Try different preprocessing techniques
+
+============================================================

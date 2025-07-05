@@ -1,0 +1,54 @@
+{
+  "timestamp": "20250706_004314",
+  "model_type": "MultinomialNB",
+  "vectorizer_type": "tfidf",
+  "max_features": 3000,
+  "ngram_range": [
+    1,
+    2
+  ],
+  "train_accuracy": 0.8739495798319328,
+  "test_accuracy": 0.8226332970620239,
+  "classification_report": {
+    "negative": {
+      "precision": 0.6764705882352942,
+      "recall": 0.8789808917197452,
+      "f1-score": 0.7645429362880887,
+      "support": 157.0
+    },
+    "neutral": {
+      "precision": 0.8659217877094972,
+      "recall": 0.6326530612244898,
+      "f1-score": 0.7311320754716981,
+      "support": 245.0
+    },
+    "positive": {
+      "precision": 0.8638059701492538,
+      "recall": 0.8955512572533849,
+      "f1-score": 0.879392212725546,
+      "support": 517.0
+    },
+    "accuracy": 0.8226332970620239,
+    "macro avg": {
+      "precision": 0.8020661153646816,
+      "recall": 0.8023950700658733,
+      "f1-score": 0.7916890748284443,
+      "support": 919.0
+    },
+    "weighted avg": {
+      "precision": 0.8323660575722875,
+      "recall": 0.8226332970620239,
+      "f1-score": 0.8202463258617011,
+      "support": 919.0
+    }
+  },
+  "cv_scores": [
+    0.9233278955954323,
+    0.9150326797385621,
+    0.803921568627451,
+    0.6699346405228758,
+    0.6601307189542484
+  ],
+  "cv_mean": 0.7944695006877138,
+  "cv_std": 0.11382894828933916
+}
