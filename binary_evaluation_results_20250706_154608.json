@@ -1,0 +1,61 @@
+{
+  "timestamp": "20250706_154608",
+  "model_type": "MultinomialNB_Binary",
+  "classification_type": "Binary (Positive vs Negative)",
+  "vectorizer_type": "tfidf",
+  "max_features": 3000,
+  "ngram_range": [
+    1,
+    2
+  ],
+  "train_accuracy": 0.9099821746880571,
+  "test_accuracy": 0.867983367983368,
+  "classification_report": {
+    "negative": {
+      "precision": 0.6392405063291139,
+      "recall": 0.9395348837209302,
+      "f1-score": 0.7608286252354048,
+      "support": 215.0
+    },
+    "positive": {
+      "precision": 0.9798761609907121,
+      "recall": 0.8473895582329317,
+      "f1-score": 0.908829863603733,
+      "support": 747.0
+    },
+    "accuracy": 0.867983367983368,
+    "macro avg": {
+      "precision": 0.809558333659913,
+      "recall": 0.893462220976931,
+      "f1-score": 0.8348292444195688,
+      "support": 962.0
+    },
+    "weighted avg": {
+      "precision": 0.9037465708116647,
+      "recall": 0.867983367983368,
+      "f1-score": 0.8757526637604997,
+      "support": 962.0
+    }
+  },
+  "cv_scores": [
+    0.8862928348909658,
+    0.8892355694227769,
+    0.9032761310452418,
+    0.890795631825273,
+    0.8736349453978159
+  ],
+  "cv_mean": 0.8886470225164148,
+  "cv_std": 0.009485550954603296,
+  "classes": [
+    "positive",
+    "negative"
+  ],
+  "class_balancing": {
+    "smote_used": true,
+    "class_weights_used": true,
+    "class_weights": {
+      "negative": 1.0,
+      "positive": 1.0
+    }
+  }
+}

@@ -1,0 +1,88 @@
+============================================================
+BINARY SENTIMENT ANALYSIS REPORT
+============================================================
+Generated on: 2025-07-06 15:46:08
+
+DATASET STATISTICS:
+- Total reviews: 2671
+- Unique products: 2
+- Classification type: Binary (Positive vs Negative)
+- Binary sentiment distribution:
+  positive: 2489 (93.2%)
+  negative: 182 (6.8%)
+- Class balance ratio: 0.073
+
+MODEL CONFIGURATION:
+- Algorithm: MultinomialNB (Binary Classification)
+- Classes: Positive, Negative
+- Vectorizer: TFIDF
+- Max features: 3000
+- N-gram range: (1, 2)
+- SMOTE balancing: Yes
+- Class weights: Yes
+
+BINARY CLASSIFICATION PERFORMANCE:
+- Training accuracy: 0.9100
+- Test accuracy: 0.8680
+- Cross-validation mean: 0.8886 (+/- 0.0190)
+- Positive class precision: 0.9799
+- Positive class recall: 0.8474
+- Positive class F1-score: 0.9088
+- Negative class precision: 0.6392
+- Negative class recall: 0.9395
+- Negative class F1-score: 0.7608
+
+BINARY CLASSIFICATION METRICS DEFINITIONS:
+- Precision: Of all instances predicted as positive, how many were actually positive?
+  Important for minimizing false positives (wrongly marking negative as positive)
+
+- Recall (Sensitivity): Of all actual positive instances, how many were correctly identified?
+  Important for minimizing false negatives (missing actual positive cases)
+
+- F1-Score: Harmonic mean of precision and recall
+  Useful when you need balance between precision and recall
+
+- True Positive (TP): Correctly predicted positive
+- True Negative (TN): Correctly predicted negative
+- False Positive (FP): Incorrectly predicted positive (Type I error)
+- False Negative (FN): Incorrectly predicted negative (Type II error)
+
+DETAILED BINARY CLASSIFICATION METRICS:
+POSITIVE:
+  Precision: 0.9799 (97.99%)
+  Recall: 0.8474 (84.74%)
+  F1-score: 0.9088 (90.88%)
+  Support: 747.0 samples
+
+NEGATIVE:
+  Precision: 0.6392 (63.92%)
+  Recall: 0.9395 (93.95%)
+  F1-score: 0.7608 (76.08%)
+  Support: 215.0 samples
+
+MACRO AVERAGE (unweighted mean across both classes):
+  Precision: 0.8096 (80.96%)
+  Recall: 0.8935 (89.35%)
+  F1-score: 0.8348 (83.48%)
+
+WEIGHTED AVERAGE (weighted by support for each class):
+  Precision: 0.9037 (90.37%)
+  Recall: 0.8680 (86.80%)
+  F1-score: 0.8758 (87.58%)
+
+CONFUSION MATRIX ANALYSIS:
+  True Positives (TP): 202
+  False Negatives (FN): 13
+  False Positives (FP): 114
+  True Negatives (TN): 633
+
+  Accuracy: 0.8680 (86.80%)
+  Error Rate: 0.1320 (13.20%)
+
+BINARY CLASSIFICATION RECOMMENDATIONS:
+- Excellent binary classification performance (>85% accuracy)
+- Model is ready for production use
+- Class imbalance detected: positive performs better than negative
+- Consider collecting more negative samples or adjusting class weights
+
+============================================================
